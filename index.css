@@ -1,0 +1,255 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+:root{
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #141D2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 730px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading{
+    color: white;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.theme{
+    display: flex;
+    gap: 10px;
+}
+
+.theme h3{
+    color: var(--lm-bg);
+    font-size: 1em;
+}
+
+.darktheme{
+    display: none;
+}
+
+.theme:hover{
+    cursor: pointer;
+}
+
+
+.searcharea{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: #1E2A47;
+    box-shadow: #141D2F;
+    border-radius: 10px;
+    padding: 24px;
+    padding-left: 48px;
+}
+
+.searcharea img{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
+#name{
+    width: 65%;
+    background-color: transparent;
+    font-size: 22px;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+    font-family: monospace;
+    border: none;
+}
+
+input {
+    border: 1px solid #1E2A47;
+    outline: none;
+}
+
+/* input:focus {
+    border: none;
+} */
+
+.noresult{
+    color: red;
+    display: none;
+}
+
+.search{
+    font-size: 16px;
+}
+
+button{
+    background-color: var(--btn);
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.search:hover{
+    cursor: pointer;
+    background-color: var(--btn-hover);
+}
+
+.contentarea{
+    margin: 3rem 0;
+    background-color: #1E2A47;
+    box-shadow: #141D2F;
+    border-radius: 10px;
+    padding: 36px;
+    position: relative;
+}
+
+.profilephoto{
+    position: absolute;
+    border-radius: 100%;
+}
+
+.about{
+    margin-left: 8rem;
+    color: white;
+}
+
+.namesection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name{
+    font-size: 26px;
+    font-weight: bold;
+}
+.joindate{
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.username{
+    padding: 8px 0px;
+    font-size: 16px;
+    color: blue;
+}
+
+.username:hover{
+    cursor: pointer;
+}
+
+.bio{
+    font-size: 15px;
+    font-family: monospace;
+    padding-top: 10px;
+    opacity: 0.75;
+    line-height: 25px;
+    word-spacing: 1px;
+}
+
+.gitdetails{
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#141D2F;
+}
+
+.gitsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.number{
+    font-size: 24px;
+    color: white;
+}
+
+.share{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 60px;
+    gap: 10px;
+    margin-top: 1rem ;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.div2{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.location:hover {
+    cursor: pointer;
+}
+
+.github:hover {
+    cursor: pointer;
+}
+
+.college:hover {
+    cursor: pointer;
+}
+
+.twitter:hover {
+    cursor: pointer;
+}
+
+.rowdir{
+    display: flex;
+    gap: 16px;
+}
+
